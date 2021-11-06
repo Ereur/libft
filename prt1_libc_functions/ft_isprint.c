@@ -6,13 +6,11 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 10:29:55 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/02 10:42:52 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/06 10:17:36 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-#include<stdio.h>
-#include<ctype.h>
 
 int	ft_isprint(int c)
 {

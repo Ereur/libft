@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:54:21 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/04 10:58:19 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/06 12:13:03 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 	//-->copy from last of src;
 // else copy from the end of source; 
 #include "libft.h"
-#include<stdio.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -42,3 +41,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+/*int main(void)
+{
+    char st[50] = "peanutzwin";
+    printf("%s\n",ft_memmove(st+2,st,2));
+    printf("%s\n", memmove(st+2,st,2));
+ 
+}*/

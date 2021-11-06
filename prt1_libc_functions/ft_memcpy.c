@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:19:53 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/04 11:19:09 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/06 10:43:09 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (!dst)
@@ -24,6 +24,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		*(char *)(dst + i) = *(char *)(src + i);
 		i++;
 	}
+	return ((char *)(dst));
 }
 
 /*int main(void)
