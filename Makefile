@@ -1,12 +1,22 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: aamoussa <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/11/01 16:01:19 by aamoussa          #+#    #+#              #
-#    Updated: 2021/11/01 16:01:52 by aamoussa         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+# _*_ MakeFile _*_
+
+CC := cc
+CFLAGS := -g -Wall -Wextra -Werror
+#SRCS := ft_bzero.c ft_isascii.c ft_isprint.c ft_memcmp.c ft_memmove.c ft_strchr.c ft_strlen.c ft_strnstr.c ft_tolower.c ft_calloc.c ft_isalpha.c ft_isdigit.c ft_memchr.c ft_memcpy.c ft_memset.c ft_strdup.c ft_strncmp.c ft_strrchr.c ft_toupper.c ft_isalnum.c
+SRCS := *.c
+NAME := libft.a
+OBJS := ${SRCS:.c=.o}
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	ar crs $(NAME) $(OBJS)	
+%.o : %.c
+	$(CC) $(CFLAGS) -c $(SRCS)
+
+clean : 
+	rm -f *.o
+fclean :
+	rm -f $(NAME)
+re : fclean all
 
