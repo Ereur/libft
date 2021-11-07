@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:13:51 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/07 20:53:46 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/07 20:57:01 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,5 @@ char	*strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
 void	*calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
