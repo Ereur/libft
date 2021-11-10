@@ -6,18 +6,16 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:20:13 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/09 21:55:04 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/10 22:54:35 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include<stdio.h>
 
 static int	ft_counter(char *b, char c)
 {
 	int		i;
 	int		counter;
-	char	tmp[2];
 
 	if (!*b)
 		return (0);
@@ -34,7 +32,19 @@ static int	ft_counter(char *b, char c)
 	return (counter + 1);
 }
 
-static int	ft_strs_len(char *s, char c, char **ptr)
+static	void	ft_free_all(char **ptr, int j)
+{
+	int	i;
+
+	i = 0;
+	while (i < j)
+	{
+		free(ptr[i]);
+		i++;
+	}
+}
+
+static char	**ft_strs_len(char *s, char c, char **ptr)
 {
 	int		i;
 	int		counter;
@@ -49,14 +59,45 @@ static int	ft_strs_len(char *s, char c, char **ptr)
 			i++;
 		if (!s[i])
 			break ;
-		while (!(s[i] == c) && s[i])
-		{
+		while (!(s[i++] == c) && s[i])
 			counter++;
-			i++;
+		ptr[j] = malloc((counter + 1) * sizeof(char));
+		if (!(ptr[j++]))
+		{	
+			ft_free_all(ptr, j);
+			return (NULL);
 		}
 	counter = 0;
 	}
-	return(0);
+	ptr[j] = NULL;
+	return (ptr);
+}
+
+static char	**ft_fill_strs(char *s, char c, char **ptr)
+{
+	int	i;
+	int	j;
+	int	k;
+
+	j = 0;
+	i = 0;
+	while (s[i])
+	{
+		k = 0;
+		while (s[i] == c && s[i])
+			i++;
+		if (!s[i])
+			break ;
+		while (!(s[i] == c) && s[i])
+		{
+			ptr[j][k] = s[i];
+			i++;
+			k++;
+		}
+		ptr[j][k] = 0;
+		j++;
+	}	
+	return (ptr);
 }
 
 char	**ft_split(char const *s, char c)
@@ -68,14 +109,17 @@ char	**ft_split(char const *s, char c)
 
 	tmp[0] = c;
 	tmp[1] = 0;
+	if (!s)
+		return (NULL);
 	trimd = ft_strtrim(s, tmp);
+	if (!trimd)
+		return (NULL);
 	num_of_words = ft_counter(trimd, c) + 1;
 	ptr = malloc(num_of_words * sizeof(char *));
-	ft_strs_len(trimd, c, ptr);
-	return(ptr);
-}
-
-int	main(void)
-{	
-	ft_split("   Anas salah dfsdf lpsdsvk  ", ' ');
+	if (!ptr)
+		return (NULL);
+	ptr = ft_strs_len(trimd, c, ptr);
+	if (!ptr)
+		return (NULL);
+	return (ft_fill_strs(trimd, c, ptr));
 }
