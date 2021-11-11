@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:13:51 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/08 18:24:10 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/10 23:21:08 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,5 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strdup(const char *src);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 #endif
