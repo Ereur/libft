@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:32:18 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/14 11:12:30 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/14 12:50:11 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dest_length = size;
 	return (dest_length + src_length);
 }
+
+/*
+int main()
+{
+	char *dst;
+	dst = (char *)malloc(3);
+	memset(dst,'d',3);
+	printf("%d\n",ft_strlcat(dst,"robot",7));
+	printf("%s",dst);
+}
+*/

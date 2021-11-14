@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:20:13 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/10 22:54:35 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/14 11:43:47 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ static	void	ft_free_all(char **ptr, int j)
 		free(ptr[i]);
 		i++;
 	}
+	free(ptr);
 }
 
 static char	**ft_strs_len(char *s, char c, char **ptr)
