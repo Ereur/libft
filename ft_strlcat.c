@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:32:18 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/06 10:18:22 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/14 11:12:30 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_length;
 
 	src_length = ft_strlen(src);
+	if (!dst && size == 0)
+		return (src_length);
 	dest_length = ft_strlen(dst);
 	j = dest_length;
 	i = 0;
