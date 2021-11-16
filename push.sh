@@ -1,11 +1,11 @@
 #!/bin/bash
 
-git add *
+git add $1
 
-echo "enter message to commit"
-read message
+#echo "enter message to commit"
+#read message
 
-git commit -m "$message"
+git commit -m $2
 
 git push
 
