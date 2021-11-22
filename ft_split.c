@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:20:13 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/14 11:43:47 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 15:21:37 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,14 @@ static	void	ft_free_all(char **ptr, int j)
 	while (i < j)
 	{
 		free(ptr[i]);
+		ptr[i] = NULL;
 		i++;
 	}
 	free(ptr);
+	ptr = NULL;
 }
 
-static char	**ft_strs_len(char *s, char c, char **ptr)
+static void	ft_strs_len(char *s, char c, char **ptr)
 {
 	int		i;
 	int		counter;
@@ -56,22 +58,22 @@ static char	**ft_strs_len(char *s, char c, char **ptr)
 	counter = 0;
 	while (s[i])
 	{
-		while (s[i] == c && s[i])
+		while (s[i] && s[i] == c)
 			i++;
 		if (!s[i])
 			break ;
-		while (!(s[i++] == c) && s[i])
+		while (s[i] && !(s[i++] == c))
 			counter++;
 		ptr[j] = malloc((counter + 1) * sizeof(char));
 		if (!(ptr[j++]))
 		{	
 			ft_free_all(ptr, j);
-			return (NULL);
+			ptr = NULL;
+			return ;
 		}
 	counter = 0;
 	}
 	ptr[j] = NULL;
-	return (ptr);
 }
 
 static char	**ft_fill_strs(char *s, char c, char **ptr)
@@ -85,11 +87,11 @@ static char	**ft_fill_strs(char *s, char c, char **ptr)
 	while (s[i])
 	{
 		k = 0;
-		while (s[i] == c && s[i])
+		while (s[i] && s[i] == c)
 			i++;
 		if (!s[i])
 			break ;
-		while (!(s[i] == c) && s[i])
+		while (s[i] && !(s[i] == c))
 		{
 			ptr[j][k] = s[i];
 			i++;
@@ -97,7 +99,8 @@ static char	**ft_fill_strs(char *s, char c, char **ptr)
 		}
 		ptr[j][k] = 0;
 		j++;
-	}	
+	}
+	free(s);
 	return (ptr);
 }
 
@@ -118,9 +121,44 @@ char	**ft_split(char const *s, char c)
 	num_of_words = ft_counter(trimd, c) + 1;
 	ptr = malloc(num_of_words * sizeof(char *));
 	if (!ptr)
+	{	
+		free(trimd);
 		return (NULL);
-	ptr = ft_strs_len(trimd, c, ptr);
+	}
+	ft_strs_len(trimd, c, ptr);
 	if (!ptr)
 		return (NULL);
 	return (ft_fill_strs(trimd, c, ptr));
 }
+
+/*
+void	ft_print_result(char const *s)
+{
+	int		len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	write(1, s, len);
+}
+
+int main(void)
+{
+	char	**tab;
+	int		i = 0;
+
+	char const *s = "Anas salah";
+	tab = ft_split(s, ' ');
+	while (tab[i] != NULL)
+	{
+		ft_print_result(tab[i]);
+		free(tab[i]);
+		tab[i] = NULL;
+		write(1, "\n", 1);
+		i++;
+	}
+	free(tab);
+	tab = NULL;
+	system("leaks a.out");
+}
+*/

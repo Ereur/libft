@@ -6,12 +6,11 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:34:29 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/03 18:21:24 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 17:22:08 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
 // copy from src to dest and null terminate the dest  if the dessize is zero
 // return lenght of src;
 
@@ -33,3 +32,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
+/*
+int main()
+{
+	char dst[50];
+	ft_strlcpy(dst,"Anas",4);
+	printf("%s", dst);
+}*/

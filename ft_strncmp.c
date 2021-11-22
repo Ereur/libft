@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:55:39 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/07 15:12:24 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 22:31:27 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,13 @@ static int	cmp_char(unsigned char c1, unsigned char c2)
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
+	unsigned char	*c1;
+	unsigned char	*c2;
 	size_t			i;
 
 	i = 0;
-    unsigned char *c1;
-    unsigned char *c2;
-
-    c1 = (unsigned char *)s1;
-    c2 = (unsigned char *)s2;
-    
+	c1 = (unsigned char *)s1;
+	c2 = (unsigned char *)s2;
 	while (c1[i] && c2[i] && i < n)
 	{
 		if (cmp_char(c1[i], c2[i]))

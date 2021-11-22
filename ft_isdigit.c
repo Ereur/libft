@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:11:44 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/04 10:50:21 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 14:56:46 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,9 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+	printf("%d",ft_isdigit('6'));
+}*/

@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 10:29:55 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/06 10:17:36 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:13:02 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,9 @@ int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+	printf("%d",ft_isprint(31));
+}*/

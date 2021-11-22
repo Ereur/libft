@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 19:12:15 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/07 20:13:33 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/19 16:52:01 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	if (start >= ft_strlen(s) || len == 0)
 	{
 		ptr = (char *)malloc(sizeof (char) * 1);
 		*ptr = '\0';

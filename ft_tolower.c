@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:12:26 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/06 11:14:49 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 17:43:17 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,8 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
+/*
+int main(void)
+{
+	printf("%c",ft_tolower('H'));
+}*/

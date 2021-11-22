@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 16:39:27 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/07 12:56:50 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 22:21:33 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
-    
+
 	if (!needle[0])
 		return ((char *)haystack);
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:31:15 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/03 10:20:40 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 16:39:18 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,18 @@ void	*ft_memset(void *b, int c, size_t len)
 	ptr = (unsigned char *)b;
 	i = 0;
 	while (i < len)
-		ptr[i++] = c;
+		ptr[i++] = (unsigned char)c;
 	return (b);
 }
 
-/*int	main(void)
+/*
+#include<stdio.h>
+
+int	main(void)
 {
-	int	arr[] = {1,2,3,4,5,6};
-	//int str[] = 0;
-	ft_memset(arr, 23, 6 * sizeof(int));
-	//memset(str, '.', 1 * sizeof(char));
-	int i = 0;
-	while(i <= 5)
-	{
-		printf("%d\n",arr[i++]);
-	}
-}*/
+	
+	char str[] ="anas";
+	ft_memset(str + 2, '\0', 4);
+	printf("%s", str);
+}
+*/

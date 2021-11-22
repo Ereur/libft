@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:54:21 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/07 14:08:42 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 21:06:29 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*int main(void)
+/*
+int main(void)
 {
 	char st[50] = "peanutzwin";
-	printf("%s\n",ft_memmove(st+2,st,2));
-	printf("%s\n", memmove(st+2,st,2));
+	char st1[50] = "peanutzwin";
+	printf("%s\n",ft_memmove(st+2,st,ft_strlen(st)));
+	printf("%s\n", memmove(st1+2,st1,ft_strlen(st1)));
  
 }*/

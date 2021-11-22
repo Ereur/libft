@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:00:26 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/02 11:27:32 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:17:24 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,9 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+	printf("%zu",ft_strlen(NULL));
+}*/

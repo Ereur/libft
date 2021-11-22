@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 23:19:59 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/11 04:48:04 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 15:19:50 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,11 +89,11 @@ char	*ft_itoa(int n)
 	i = ft_len(n);
 	return (ft_alloc(n, i));
 }
-
-/*int	main(void)
+/*
+int	main(void)
 {
 	char *ptr;
-	printf("%s",ft_itoa(-2147483648));
-	//ft_itoa(-2147483648);
+	printf("%s",ft_itoa(21474836472147483647));
+	ft_itoa(-2147483648);
 
 }*/

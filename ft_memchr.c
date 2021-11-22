@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:36:40 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/06 17:22:24 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/18 21:04:59 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
-
 
 	i = 0;
 	while (i < n)
