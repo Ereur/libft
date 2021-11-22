@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:20:13 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/22 15:21:37 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:17:16 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,7 @@ char	**ft_split(char const *s, char c)
 
 	tmp[0] = c;
 	tmp[1] = 0;
+	system("Showleaks a.out");
 	if (!s)
 		return (NULL);
 	trimd = ft_strtrim(s, tmp);
@@ -159,6 +160,6 @@ int main(void)
 	}
 	free(tab);
 	tab = NULL;
-	system("leaks a.out");
+
 }
 */
