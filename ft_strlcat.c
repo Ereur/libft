@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:32:18 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 17:38:37 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:35:07 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dest_length = size;
 	return (dest_length + src_length);
 }
-/*
-int main()
-{
-	char dst[50] = "Anas";
-	char src[] = "Peanut";
-	printf("%zu",ft_strlcat(dst,src,6));
-	printf("%s",dst);
-}
-*/

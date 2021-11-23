@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:52:12 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 14:54:30 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:27:12 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,3 @@ int	ft_isalpha(int c)
 		return (0);
 	}
 }
-
-/*
-int main(void)
-{
-	printf("%d",ft_isalpha('0'));
-}
-*/

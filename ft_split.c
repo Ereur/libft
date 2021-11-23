@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:20:13 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/22 19:17:16 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/23 15:21:29 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,6 @@ char	**ft_split(char const *s, char c)
 
 	tmp[0] = c;
 	tmp[1] = 0;
-	system("Showleaks a.out");
 	if (!s)
 		return (NULL);
 	trimd = ft_strtrim(s, tmp);
@@ -131,35 +130,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_fill_strs(trimd, c, ptr));
 }
-
-/*
-void	ft_print_result(char const *s)
-{
-	int		len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	write(1, s, len);
-}
-
-int main(void)
-{
-	char	**tab;
-	int		i = 0;
-
-	char const *s = "Anas salah";
-	tab = ft_split(s, ' ');
-	while (tab[i] != NULL)
-	{
-		ft_print_result(tab[i]);
-		free(tab[i]);
-		tab[i] = NULL;
-		write(1, "\n", 1);
-		i++;
-	}
-	free(tab);
-	tab = NULL;
-
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:36:40 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 21:04:59 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:30:00 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/*int	main(void)
-{
-	printf("org fun %s\n",memchr("Anas",'e',5));
-	printf("%s",ft_memchr("Anas",'e',6));
-	
-}*/

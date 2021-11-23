@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 20:57:27 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/07 21:39:31 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:34:53 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[s1_len + s2_len] = 0;
 	return (ptr);
 }
-
-/*int	main()
-{
-	char s1[] = "ayo";
-	char s2[] = "klo";
-	printf("%s",ft_strjoin(,));
-
-}*/

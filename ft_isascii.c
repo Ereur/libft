@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 10:20:20 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 15:10:52 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:27:20 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-	printf("%d",ft_isascii('a'));
-}*/

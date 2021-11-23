@@ -6,13 +6,13 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:54:21 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 21:06:29 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:33:26 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // check if dest > src to handle overlap;
 	//-->copy from last of src;
-// else copy from the end of source; 
+// else copy from the end of dest; 
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
@@ -41,12 +41,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-int main(void)
-{
-	char st[50] = "peanutzwin";
-	char st1[50] = "peanutzwin";
-	printf("%s\n",ft_memmove(st+2,st,ft_strlen(st)));
-	printf("%s\n", memmove(st1+2,st1,ft_strlen(st1)));
- 
-}*/

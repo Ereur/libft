@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:55:39 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 22:31:27 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:35:46 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,17 +38,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (cmp_char(c1[i], c2[i]));
 	return (0);
 }
-
-/*int	main(void)
-{
-    char	*s1 = "\x12\xff\x65\x12\xbd\xde\xad";
-	char	*s2 = "\x12\x02";
-	size_t	size = 6;
-
-	int		i1 = strncmp(s1, s2, size);
-	int		i2 = ft_strncmp(s1, s2, size);
-    printf("org fun : %d", i1);
-    printf("our fun : %d", i2);
-    
-}
-*/

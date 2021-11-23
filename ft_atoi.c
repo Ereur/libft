@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 15:24:35 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/22 15:15:24 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:25:08 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,3 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)num * sign);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-	char s[] = "-2147483648";
-	printf("%d",ft_atoi(s));
-}*/

@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:14:51 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/06 18:09:57 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:34:35 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-
-/*int	main(void)
-{
-	printf("%s\n",ft_strchr("Anas",'\0'));
-	return (0);
-}*/

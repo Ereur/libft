@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 15:22:41 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 22:33:29 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:35:38 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr[i] = 0;
 	return (ptr);
 }
-
-/*int main()
-{
-	( char *)(*f) =	
-}
-*/

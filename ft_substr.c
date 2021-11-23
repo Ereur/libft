@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 19:12:15 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/19 16:52:01 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:41:47 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strcpy(ptr, s + start, len + 1);
 	return (ptr);
 }
-/*
-int main(void)
-{
-	ft_substr("ANASPN",10,2);
-	printf("")
-}
-*/

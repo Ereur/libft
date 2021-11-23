@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 16:39:27 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 22:21:33 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:41:27 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-int main()
-{
-    char haystack[50] = "Peanutanasok";
-    char needle[] = "anas";
-    char *p,*J;
-    p = ft_strnstr(haystack,needle,20);
-    J = strnstr(haystack,needle,20);
-    printf("%s\n",p);
-    printf("%s",J);
-    
-}
-*/

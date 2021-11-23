@@ -6,7 +6,7 @@
 /*   By: aamoussa <aamoussa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 10:19:53 by aamoussa          #+#    #+#             */
-/*   Updated: 2021/11/18 21:05:50 by aamoussa         ###   ########.fr       */
+/*   Updated: 2021/11/22 19:31:04 by aamoussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 		*d++ = *s++;
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char str[50] = "Anas";
-	char dest[50];
-	memcpy(NULL, NULL, 4);
-	
-}*/
